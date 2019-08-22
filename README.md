@@ -18,7 +18,7 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 This example shows a dashboard with multiple progressive channels of data points using progressive line series.
 
-The dashboard allows rendering of multiple scenes in a single view port pane highly efficiently with minimal memory resources. In our case, the rows of dashboard grid are filled with individual charts, where each represents the data channel.
+The dashboard allows rendering of multiple scenes in a single view port highly efficiently with minimal memory resources. In our case, the rows of dashboard grid are filled with individual charts, where each represents the data channel.
 
 #### Progressive series
 
