@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases usage of Dashboard with multiple channels and axis scroll strategies.
  */
 // Import LightningChartJS

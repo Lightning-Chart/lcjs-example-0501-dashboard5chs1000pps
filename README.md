@@ -1,4 +1,4 @@
-# Dashboard 5 channels 1000 pps
+# Dashboard 5 Channels 1000 pps
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -14,7 +14,8 @@ The demo can be used as an example or a seed project. Local execution requires t
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
 
-### Description 
+
+## Description
 
 This example shows a dashboard with multiple progressive channels of data points using progressive line series.
 
@@ -25,16 +26,17 @@ The dashboard allows rendering of multiple scenes in a single view port highly e
 Progressive series are highly optimized series for the rendering of high-volume and high-density data while keeping full interactivity.
 These optimizations are enabled by selecting a ***DataPattern***, which needs to be specified during the creation of the series instance and cannot be changed further for performance related reasons. *More detailed description was explained in previous examples.*
 
-### API links
 
-* Dashboard: [Dashboard][]
-* XY cartesian chart: [ChartXY][]
-* Axis: [Axis][]
-* Progressive line series: [ProgressiveLineSeries][]
-* Solid LineStyle: [SolidLine][]
+## API Links
+
+* Dashboard: [Dashboard]
+* XY cartesian chart: [ChartXY]
+* Axis: [Axis]
+* Progressive line series: [ProgressiveLineSeries]
+* Solid LineStyle: [SolidLine]
 
 
-### Support
+## Support
 
 If you notice an error in the example code, please open an issue on [GitHub][0] repository of the entire example.
 
@@ -46,16 +48,18 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
-
 [0]: https://github.com/Arction/
 [1]: https://www.arction.com/lightningchart-js-api-documentation/
 [2]: https://www.arction.com
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/axis.html
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/chartxy.html
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/dashboard.html
-[ProgressiveLineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/progressivelineseries.html
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.1.0/classes/solidline.html
+© Arction Ltd 2009-2019. All rights reserved.
+
+
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/dashboard.html
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/axis.html
+[ProgressiveLineSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/progressivelineseries.html
+[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidline.html
+
