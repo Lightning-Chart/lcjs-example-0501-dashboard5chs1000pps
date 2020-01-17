@@ -48,7 +48,7 @@ const charts = channels.map((channelName, i) => {
 // Map progressive line series for each chart.
 const series = charts.map((chart, i) =>
     chart.addLineSeries({ dataPattern: DataPatterns.horizontalProgressive })
-         // Destroy automatically outscrolled data (old data becoming out of X axis range) 
+        // Destroy automatically outscrolled data (old data becoming out of X axis range) 
         .setMaxPointCount(10000)
         .setStrokeStyle((lineStyle) => lineStyle.setThickness(1.0))
 )
