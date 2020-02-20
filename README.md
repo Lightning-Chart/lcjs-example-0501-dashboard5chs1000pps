@@ -23,7 +23,7 @@ This example shows a dashboard with multiple progressive channels of data points
 
 The dashboard allows rendering of multiple scenes in a single view port highly efficiently with minimal memory resources. In our case, the rows of dashboard grid are filled with individual charts, where each represents the data channel.
 
-#### Progressive series
+## Progressive series
 
 Progressive series are highly optimized series for the rendering of high-volume and high-density data while keeping full interactivity.
 These optimizations are enabled by selecting a ***DataPattern***, which needs to be specified during the creation of the series instance and cannot be changed further for performance related reasons. *More detailed description was explained in previous examples.*
