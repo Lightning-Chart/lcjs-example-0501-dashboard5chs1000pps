@@ -9,7 +9,8 @@ const {
     lightningChart,
     AxisScrollStrategies,
     emptyFill,
-    DataPatterns
+    DataPatterns,
+    Themes
 } = lcjs
 
 // Import data-generator from 'xydata'-library.
@@ -22,6 +23,7 @@ const channelCount = channels.length
 
 // Create Dashboard.
 const grid = lightningChart().Dashboard({
+    // theme: Themes.dark 
     numberOfRows: channelCount,
     numberOfColumns: 1
 })
