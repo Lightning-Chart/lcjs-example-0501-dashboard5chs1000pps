@@ -9,7 +9,6 @@ const {
     lightningChart,
     AxisScrollStrategies,
     emptyFill,
-    DataPatterns,
     Themes
 } = lcjs
 
@@ -49,8 +48,16 @@ const charts = channels.map((channelName, i) => {
 
 // Map progressive line series for each chart.
 const series = charts.map((chart, i) =>
-    chart.addLineSeries({ dataPattern: DataPatterns.horizontalProgressive })
-        // Destroy automatically outscrolled data (old data becoming out of X axis range) 
+    chart.addLineSeries({
+        dataPattern: {
+            // pattern: 'ProgressiveX' => Each consecutive data point has increased X coordinate.
+            pattern: 'ProgressiveX',
+            // regularProgressiveStep: true => The X step between each consecutive data point is regular (for example, always `1.0`).
+            regularProgressiveStep: true,
+        }
+    })
+        // Destroy automatically outscrolled data (old data becoming out of X axis range).
+        // Actual data cleaning can happen at any convenient time (not necessarily immediately when data goes out of range).
         .setMaxPointCount(10000)
         .setStrokeStyle((lineStyle) => lineStyle.setThickness(1.0))
 )

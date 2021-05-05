@@ -34,7 +34,8 @@ These optimizations are enabled by selecting a ***DataPattern***, which needs to
 * [Dashboard]
 * [XY cartesian chart]
 * [Axis]
-* [Progressive line series]
+* [Line series]
+* [Data patterns]
 * [Solid LineStyle]
 
 
@@ -59,9 +60,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/dashboard.html
-[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/chartxy.html
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/axis.html
-[Progressive line series]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/progressivelineseries.html
-[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.2.0/classes/solidline.html
+[Dashboard]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/dashboard.html
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/chartxy.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/axis.html
+[Line series]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/lineseries.html
+[Data patterns]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/interfaces/datapattern.html
+[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v3.0.0/classes/solidline.html
 
