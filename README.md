@@ -1,6 +1,6 @@
-# Dashboard 5 Channels 1000 pps
+# JavaScript Dashboard 5 Channels 1000 pps
 
-![Dashboard 5 Channels 1000 pps](dashboard5ch.png)
+![JavaScript Dashboard 5 Channels 1000 pps](dashboard5ch.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
