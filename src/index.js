@@ -22,7 +22,7 @@ const channelCount = channels.length
 
 // Create Dashboard.
 const grid = lightningChart().Dashboard({
-    // theme: Themes.dark 
+    // theme: Themes.darkGold 
     numberOfRows: channelCount,
     numberOfColumns: 1
 })
