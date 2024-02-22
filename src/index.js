@@ -37,7 +37,10 @@ const charts = channels.map((channelName, i) => {
         .setTitleFillStyle(emptyFill)
 
     // Configure X-axis of chart to be progressive and have nice interval.
-    chart.getDefaultAxisX().setScrollStrategy(AxisScrollStrategies.progressive).setInterval({ start: 0, end: 10000, stopAxisAfter: false }) // 10,000 millisecond axis
+    chart
+        .getDefaultAxisX()
+        .setScrollStrategy(AxisScrollStrategies.progressive)
+        .setDefaultInterval((state) => ({ end: state.dataMax, start: (state.dataMax ?? 0) - 10_000, stopAxisAfter: false }))
 
     return chart
 })
