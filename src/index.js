@@ -18,7 +18,9 @@ const channelCount = channels.length
 
 // Create Dashboard.
 // NOTE: Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/
-const grid = lightningChart().Dashboard({
+const grid = lightningChart({
+            resourcesBaseUrl: new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pathname + 'resources/',
+        }).Dashboard({
     theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     numberOfRows: channelCount,
     numberOfColumns: 1,
