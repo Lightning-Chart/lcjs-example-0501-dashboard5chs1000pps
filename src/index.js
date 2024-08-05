@@ -2,10 +2,10 @@
  * LightningChartJS example that showcases usage of Dashboard with multiple channels and axis scroll strategies.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Import xydata
-const xydata = require('@arction/xydata')
+const xydata = require('@lightningchart/xydata')
 
 // Extract required parts from LightningChartJS.
 const { lightningChart, AxisScrollStrategies, emptyFill, Themes } = lcjs
