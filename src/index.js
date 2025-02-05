@@ -50,18 +50,12 @@ const charts = channels.map((channelName, i) => {
 // Map progressive line series for each chart.
 const series = charts.map((chart, i) =>
     chart
-        .addLineSeries({
-            dataPattern: {
-                // pattern: 'ProgressiveX' => Each consecutive data point has increased X coordinate.
-                pattern: 'ProgressiveX',
-                // regularProgressiveStep: true => The X step between each consecutive data point is regular (for example, always `1.0`).
-                regularProgressiveStep: true,
-            },
+        .addPointLineAreaSeries({
+            dataPattern: 'ProgressiveX',
         })
-        // Destroy automatically outscrolled data (old data becoming out of X axis range).
-        // Actual data cleaning can happen at any convenient time (not necessarily immediately when data goes out of range).
-        .setDataCleaning({ minDataPointCount: 10000 })
-        .setStrokeStyle((lineStyle) => lineStyle.setThickness(1.0)),
+        .setMaxSampleCount(10_000)
+        .setStrokeStyle((lineStyle) => lineStyle.setThickness(1.0))
+        .setAreaFillStyle(emptyFill),
 )
 
 // Configure a common data-generator for all channels.
@@ -79,5 +73,5 @@ series.forEach((value, i) =>
         .setStreamBatchSize(15) // 15 points per batch
         .setStreamInterval(15) // interval in milliseconds
         .toStream()
-        .forEach((data) => value.add(data)),
+        .forEach((data) => value.appendSample(data)),
 )
