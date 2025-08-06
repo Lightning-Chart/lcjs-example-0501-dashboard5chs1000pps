@@ -34,6 +34,7 @@ const charts = channels.map((channelName, i) => {
             rowIndex: i,
             columnSpan: 1,
             rowSpan: 1,
+            legend: { visible: false },
         })
         // Hide titles because we have very little space.
         .setTitleFillStyle(emptyFill)
@@ -41,7 +42,7 @@ const charts = channels.map((channelName, i) => {
     // Configure X-axis of chart to be progressive and have nice interval.
     chart
         .getDefaultAxisX()
-        .setScrollStrategy(AxisScrollStrategies.progressive)
+        .setScrollStrategy(AxisScrollStrategies.scrolling)
         .setDefaultInterval((state) => ({ end: state.dataMax, start: (state.dataMax ?? 0) - 10_000, stopAxisAfter: false }))
 
     return chart
@@ -50,12 +51,14 @@ const charts = channels.map((channelName, i) => {
 // Map progressive line series for each chart.
 const series = charts.map((chart, i) =>
     chart
-        .addPointLineAreaSeries({
-            dataPattern: 'ProgressiveX',
+        .addLineSeries({
+            schema: {
+                x: { pattern: 'progressive' },
+                y: { pattern: null },
+            },
         })
         .setMaxSampleCount(10_000)
-        .setStrokeStyle((lineStyle) => lineStyle.setThickness(1.0))
-        .setAreaFillStyle(emptyFill),
+        .setStrokeStyle((lineStyle) => lineStyle.setThickness(1.0)),
 )
 
 // Configure a common data-generator for all channels.
