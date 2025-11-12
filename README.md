@@ -23,7 +23,7 @@ This example shows a dashboard with multiple progressive channels of data points
 
 The dashboard allows rendering of multiple scenes in a single view port highly efficiently with minimal memory resources. In our case, the rows of dashboard grid are filled with individual charts, where each represents the data channel.
 
-**(!) Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/**
+**(!) Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/more-guides/grouping-charts/**
 
 ## Progressive series
 
@@ -62,10 +62,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2025. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/Dashboard.html
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/ChartXY.html
-[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/Axis.html
-[Line series]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/LineSeries.html
-[Data patterns]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/interfaces/DataPattern.html
-[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SolidLine.html
+[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/Dashboard.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/ChartXY.html
+[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/Axis.html
+[Line series]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/PointLineAreaSeries.html
+[Data patterns]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/types/DataPattern.html
+[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SolidLine.html
 
